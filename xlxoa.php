@@ -1,9 +1,8 @@
 <?php
-// Bắt buộc phải bắt đầu session để lấy iduser
-session_start();
-include 'connect.php'; // Kết nối CSDL
 
-// Kiểm tra xem người dùng đã đăng nhập chưa
+session_start();
+include 'connect.php'; 
+
 if (!isset($_SESSION['iduser'])) {
     header("Location: login.php");
     exit();
@@ -50,4 +49,5 @@ try {
 
 $ocon->close();
 exit();
+
 ?>
