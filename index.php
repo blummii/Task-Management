@@ -162,7 +162,7 @@ function getStatusText($status_value) {
                     
                     <div class="task-actions">
                         <a href="#" class="edit-btn">Sửa</a>
-                        <a href="#" class="delete-btn" onclick="return confirm('Bạn có chắc chắn muốn xóa công việc này không?');">Xóa</a>
+                        <a href="xlxoa.php?id=<?=$task_id?>" class="delete-btn" onclick="return confirm('Bạn có chắc chắn muốn xóa công việc này không?');">Xóa</a>
                         <a href="#" class="detail-btn">Chi tiết</a>
                         
                         <?php if ($task_status == 0): ?>
