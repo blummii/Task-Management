@@ -22,7 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $user = $result->fetch_assoc();
 
         // Kiểm tra mật khẩu (so sánh với password_hash)
-        if ($user && password_verify($password, $user['matkhau'])) {
+        if ($user && $password === $user['matkhau']) {
+
             $_SESSION['iduser'] = $user['iduser'];
             $_SESSION['username'] = $user['hoten'];
 
