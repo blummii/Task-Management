@@ -1,0 +1,85 @@
+body {
+    background: linear-gradient(135deg, #23242b, #127b8e);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-box {
+    background: #fff;
+    border-radius: 15px;
+    padding: 40px 35px;
+    width: 380px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.register-box h2 {
+    color: #127b8e;
+    margin-bottom: 25px;
+    font-size: 26px;
+}
+
+.register-box .input-box {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.register-box label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+.register-box input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+.register-box input:focus {
+    border-color: #127b8e;
+}
+
+.register-box button {
+    background: #127b8e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.register-box button:hover {
+    background: #0e6477;
+}
+
+.register-box p {
+    margin-top: 15px;
+    color: #555;
+}
+
+.register-box a {
+    color: #127b8e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.danger {
+    background: #ffccd5;
+    color: #b20000;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
