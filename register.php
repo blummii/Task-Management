@@ -9,7 +9,7 @@ ini_set('display_errors', 1);
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $hoten = trim($_POST['hoten']);
     $email = trim($_POST['email']);
-    $matkhau = password_hash($_POST['matkhau'], PASSWORD_DEFAULT);
+    $matkhau = $_POST['matkhau']; // KHÔNG mã hoá nữa
 
     // Kiểm tra trùng email
     $check = $ocon->prepare("SELECT iduser FROM user WHERE email=?");
@@ -31,6 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->close();
     }
 }
+
 ?>
 
 <!DOCTYPE html>
