@@ -90,7 +90,9 @@ function getStatusText($status_value) {
 
                     <td>
                         <a href="" class="edit-btn">Sửa</a>
-                        <a href="" class="delete-btn">Xóa</a>
+                        <a href="xlxoa.php?id=<?=$task_id?>" class="delete-btn">Xóa</a>
+                        onclick = "return confirm('Bạn muốn xóa công việc này: <?=$task_title?>?');">Xóa
+                    </a>
                         <a href="" class="detail-btn">Chi tiết</a>
                     </td>
                 </tr>
