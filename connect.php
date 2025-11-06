@@ -2,7 +2,7 @@
 $user="root";
 $pass="";
 $host="127.0.0.1";
-$db="qlcongviec";
+$db="qlcongviec(1)";
 
 //Tạo đối tượng kết nối
 $ocon=new mysqli($host,$user,$pass, $db);
