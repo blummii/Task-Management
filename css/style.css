@@ -1,222 +1,219 @@
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial, sans-serif;
 }
 .header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 15px 30px;
-	background: #23242b;
-	color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #23242b;
+    color: #fff;
 }
 .u-name {
-	font-size: 20px;
-	padding-left: 17px;
+    font-size: 20px;
+    padding-left: 17px;
 }
 .u-name b {
-	color: #127b8e;
+    color: #127b8e;
 }
 .header i {
-	font-size: 30px;
-	cursor: pointer;
-	color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
 }
-/*.header i:hover {
-	color: #127b8e;
-}*/
 .header .notification {
-	position: relative;
-	cursor: pointer;
+    position: relative;
+    cursor: pointer;
 }
 .header .notification span{
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	background: #C80000;
-	padding: 1px;
-	border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: #C80000;
+    padding: 1px;
+    border-radius: 50%;
 }
 .header .notification:hover i{
-	color: #127b8e;
+    color: #127b8e;
 }
 .notification-bar {
-	display: none;
-	width: 90%;
-	max-width: 300px;
-	position: absolute;
-	right: 0;
-	background: #eee;
-	padding: 5px;
-	border: 1px solid #262931;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    display: none;
+    width: 90%;
+    max-width: 300px;
+    position: absolute;
+    right: 0;
+    background: #eee;
+    padding: 5px;
+    border: 1px solid #262931;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .notification-bar ul li{
-	list-style: none;
-	margin-top: 10px;
+    list-style: none;
+    margin-top: 10px;
 }
 .notification-bar ul li a{
-	text-decoration: none;
-	color: #000;
+    text-decoration: none;
+    color: #000;
 }
 
 .notification-bar ul li:nth-child(even){
-	background: #fff;
+    background: #fff;
 }
 .open-notification {
-	display: block;
+    display: block;
 }
 
 
 .user-p {
-	text-align: center;
-	padding-left: 10px;
-	padding-top: 25px;
+    text-align: center;
+    padding-left: 10px;
+    padding-top: 25px;
 }
 .user-p img {
-	width: 100px;
-	border-radius: 50%;
+    width: 100px;
+    border-radius: 50%;
 }
 .user-p h4 {
-	color: #ccc;
-	padding: 5px 0;
+    color: #ccc;
+    padding: 5px 0;
 
 }
 .side-bar {
-	width: 250px;
-	background: #262931;
-	min-height: 100vh;
-	transition: 500ms width;
+    width: 250px;
+    background: #262931;
+    min-height: 100vh;
+    transition: 500ms width;
 }
 .body {
-	display: flex;
+    display: flex;
 }
 
 
 .side-bar ul {
-	margin-top: 20px;
-	list-style: none;
+    margin-top: 20px;
+    list-style: none;
 }
 .side-bar ul li {
-	font-size: 16px;
-	padding: 15px 0px;
-	padding-left: 20px;
-	transition: 500ms background;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
+    font-size: 16px;
+    padding: 15px 0px;
+    padding-left: 20px;
+    transition: 500ms background;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .side-bar ul li:hover {
-	background: #127b8e;
+    background: #127b8e;
 }
 
 .side-bar ul li a {
-	text-decoration: none;
-	color: #eee;
-	cursor: pointer;
-	letter-spacing: 1px;
+    text-decoration: none;
+    color: #eee;
+    cursor: pointer;
+    letter-spacing: 1px;
 }
 .side-bar .active a {
-	color: #127b8e !important;
+    color: #127b8e !important;
 }
 .side-bar .active a i {
-	color: #127b8e !important;
+    color: #127b8e !important;
 }
 .side-bar ul .active:hover {
-	background: transparent;
+    background: transparent;
 }
 .side-bar ul li a i {
-	display: inline-block;
-	padding-right: 10px;
-	font-size: 23px;
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 23px;
 }
 #navbtn {
-	display: inline-block;
-	margin-left: 70px;
-	font-size: 20px;
-	transition: 500ms color;
+    display: inline-block;
+    margin-left: 70px;
+    font-size: 20px;
+    transition: 500ms color;
 }
 #checkbox { 
-	display: none; 
+    display: none; 
 } 
 #checkbox:checked ~ .body .side-bar { 
-	width: 60px; 
+    width: 60px; 
 } 
 #checkbox:checked ~ .body .side-bar .user-p{ 
-	visibility: hidden; 
+    visibility: hidden; 
 } 
 #checkbox:checked ~ .body .side-bar a span{ 
-	display: none; 
+    display: none; 
 }
 
 .login-body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 .login-body form {
-	max-width:420px;
-	width: 90%;
+    max-width:420px;
+    width: 90%;
 }
 
 .section-1 {
-	padding: 30px;
+    padding: 30px;
 }
 .section-1 .title {
     margin-bottom: 10px;
 }
 .section-1 .title a{
-	text-decoration: none;
-	display: inline-block;
+    text-decoration: none;
+    display: inline-block;
     padding-left: 10px;
-	border: none;
-	background: #00CF22;
-	padding: 10px 15px;
-	color: #fff;
-	font-size: 16px;
-	border-radius: 5px;
-	cursor: pointer;
-	outline: none;
-	transition: background 1s;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: none;
+    background: #00CF22;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background 1s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .section-1 .title-2 {
     margin-bottom: 10px;
 }
 .section-1 .title-2 .btn{
-	text-decoration: none;
-	display: inline-block;
+    text-decoration: none;
+    display: inline-block;
     padding-left: 10px;
-	border: none;
-	background: #00CF22;
-	padding: 10px 15px;
-	color: #fff;
-	font-size: 16px;
-	border-radius: 5px;
-	cursor: pointer;
-	outline: none;
-	transition: background 1s;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border: none;
+    background: #00CF22;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background 1s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .section-1 .title-2 .btn:hover{
-	opacity: .6;
+    opacity: .6;
 }
 .section-1 .title-2 a{
-	display: inline-block;
-	margin-left: 10px;
+    display: inline-block;
+    margin-left: 10px;
 }
 
 
 .section-1 {
-	width: 100%;
-	background: #ffe;
+    width: 100%;
+    background: #ffe;
 }
 .section-1 .title a:hover{
-	opacity: .6;
+    opacity: .6;
 }
 
 .main-table, .main-table tr, .main-table th, .main-table td {
@@ -225,87 +222,106 @@
   padding: 7px;
 }
 .main-table {
-	width: 90%;
-	margin-top: 30px;
+    width: 90%;
+    margin-top: 30px;
+}
+/* FIX BỐ CỤC: Áp dụng Flexbox cho ô Thao tác (cột thứ 6) */
+.main-table td:nth-child(6) {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    min-width: 180px; 
+    padding: 5px; 
+}
+/* SỬA LỖI: Giảm kích thước và padding để 3 nút có thể vừa vặn */
+.edit-btn, .delete-btn, .detail-btn, .complete-btn, .undo-btn { /* Thêm các nút mới vào đây */
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    
+    /* Tối ưu hóa kích thước nút */
+    padding: 5px 8px; 
+    font-size: 13px; 
+    width: 100%; /* Chiều rộng 100% để xếp dọc */
+    
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    outline: none;
+    transition: background 0.3s;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1); 
+    margin-bottom: 5px; /* Thêm khoảng cách giữa các nút dọc */
+}
+.edit-btn:hover, .delete-btn:hover, .detail-btn:hover, .complete-btn:hover, .undo-btn:hover {
+    opacity: 0.9;
 }
 
-
-.delete-btn{
-	text-decoration: none;
-	display: inline-block;
-    padding-left: 10px;
-	border: none;
-	background: #E00051;
-	padding: 10px 15px;
-	color: #fff;
-	font-size: 16px;
-	border-radius: 5px;
-	cursor: pointer;
-	outline: none;
-	transition: background 1s;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-.delete-btn:hover{
-	opacity: .6;
+/* Áp dụng màu sắc */
+.edit-btn, .detail-btn {
+    background: #006CE0; /* Xanh Dương */
 }
 
-.edit-btn{
-	text-decoration: none;
-	display: inline-block;
-    padding-left: 10px;
-	border: none;
-	background: #006CE0;
-	padding: 10px 15px;
-	color: #fff;
-	font-size: 16px;
-	border-radius: 5px;
-	cursor: pointer;
-	outline: none;
-	transition: background 1s;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+.delete-btn {
+    background: #E00051; /* Đỏ Thẫm */
 }
-.edit-btn:hover{
-	opacity: .6;
+
+.complete-btn {
+    background: #00CF22; 
+    color: #fff;
 }
+.undo-btn {
+    background: #ffc107; /* Màu vàng */
+    color: #333;
+}
+
 .form-1 {
-	width: 90%;
-	max-width: 500px;
+    width: 90%;
+    max-width: 500px; 
+    
+    /* === BỔ SUNG HOẶC CHỈNH SỬA THUỘC TÍNH CARD/BOX === */
+    background: #fff; /* Nền trắng */
+    border: 1px solid #ddd; /* Đường viền nhẹ */
+    border-radius: 8px; /* Bo góc */
+    padding: 20px; /* Khoảng đệm bên trong */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bóng đổ */
 }
 .input-holder lable {
-	display: block;
-	margin-bottom: 5px;
+    display: block;
+    margin-bottom: 5px;
 }
 .input-1 {
-	border: 2px solid #ccc;
-	width: 100%;
-	padding: 10px;
-	font-size: 15px;
-	outline: none;
-	border-radius: 5px;
-	display: block;
+    border: 2px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 15px;
 }
 
 .input-1:focus{
-	border-color: #555;
+    border-color: #555;
 }
 .danger {
-	background: #FF98AA;
-	color: #B20008;
-	padding: 10px;
-	margin-bottom: 10px;
+    background: #FF98AA;
+    color: #B20008;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 .success {
-	background: #80CE91;
-	color: #009D22;
-	padding: 10px;
-	margin-bottom: 10px;
+    background: #80CE91;
+    color: #009D22;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 .dashboard {
-	display: flex;
-	max-width: 650px;
-	width: 95%;
-	justify-content: space-between;
-	flex-wrap: wrap;
+    display: flex;
+    max-width: 650px;
+    width: 95%;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .dashboard-item {
     text-align: center;
@@ -315,13 +331,13 @@
     margin-bottom: 40px;
 }
 .dashboard-item i{
-	display: block;
+    display: block;
     color: #fff;
     font-size: 30px;
     margin-bottom: 5px;
 }
 .dashboard-item span{
-	display: block;
+    display: block;
     color: #fff;
 }
 /* Bổ sung để điều chỉnh vị trí icon menu */
@@ -332,8 +348,145 @@
 
 /* Loại bỏ margin-left quá lớn trên #navbtn (vì nó không còn nằm trong u-name) */
 #navbtn {
-    /* Đảm bảo nó là clickable và có kích thước lớn hơn */
     font-size: 30px; 
-    margin-right: 15px; /* Tạo khoảng cách với Task Pro */
+    margin-right: 15px; 
     cursor: pointer;
+}
+
+.input-holder label {
+    display: block;
+    margin-bottom: 5px;
+}
+/* ======================================= */
+/* === CSS CHO DANH SÁCH THẺ CÔNG VIỆC === */
+/* ======================================= */
+
+.task-list {
+    list-style: none; 
+    padding: 0;
+    margin-top: 20px;
+    display: flex; 
+    flex-direction: column; /* Quan trọng cho kéo thả */
+    gap: 10px; /* Khoảng cách giữa các thẻ */
+}
+
+.task-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    cursor: grab; 
+    transition: background 0.2s, box-shadow 0.2s;
+    border-left: 5px solid #006CE0; /* Mặc định cho việc đang làm */
+}
+
+.task-item:hover {
+    background: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-item.task-done {
+    border-left: 5px solid #009D22; /* Đường viền xanh lá cho hoàn thành */
+    opacity: 0.8;
+    cursor: default;
+}
+.task-item.task-done .task-details .task-title {
+    color: #888;
+}
+
+/* Hiệu ứng khi kéo */
+.task-item.dragging {
+    opacity: 0.5;
+    transform: scale(1.02);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Chi tiết công việc (Tiêu đề, Mô tả, Deadline) */
+.task-details {
+    flex-grow: 1;
+    margin-right: 15px;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.task-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.task-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.task-meta {
+    font-size: 12px;
+    color: #888;
+}
+
+/* Trạng thái (Hoàn thành / Đang làm) */
+.task-status {
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.task-status.task-done {
+    background: #e6ffe6;
+    color: #009D22;
+}
+.task-status.task-todo {
+    background: #fff8e1;
+    color: #FF9800; /* Màu vàng cam */
+}
+
+
+/* Khu vực Thao tác (Các nút Sửa, Xóa, Chi tiết) */
+.task-actions {
+    display: flex;
+    flex-direction: column; /* Xếp nút theo chiều dọc */
+    gap: 5px; /* Khoảng cách giữa các nút */
+    min-width: 120px; /* Đảm bảo đủ chỗ cho nút Hoàn thành */
+}
+
+/* Nút Thêm công việc (Nổi bật - Xanh lá) */
+.add-task-btn{
+    background: #7bd38a; 
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.1s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: block; 
+}
+.add-task-btn:hover {
+    background: #ade0b6;
+}
+.search-btn{
+    background: #5a7ebb; 
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.1s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: block; 
+}
+.search-btn:hover {
+    background: #a1dae0;
 }
